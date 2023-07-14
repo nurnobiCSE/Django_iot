@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iot-status</title>
+</head>
+<body>
+    <p id="nn"></p>
+    <p id="typ"></p>
+    <a href="{% url 'index' %}">home page</a>
+    <h1>Status : </h1> <br>
+    <h2>box one Time :<span id="get_time1">{{time1}}</span></h2>
+    <h2 id="set_status1">box one status is : stop </h2>
+    <h2>box two Time :<span id="get_time2">{{time2}}</span></h2>
+    <h2 id="set_status2">box two status is : stop</h2>
+
+
+
+    <!-- <script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+</body>
+</html>
